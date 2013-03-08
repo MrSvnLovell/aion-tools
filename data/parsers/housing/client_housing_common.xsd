@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+details.
+
+You should have received a copy of the GNU General Public License along with
+this program. If not, see <http://www.gnu.org/licenses/>.
+-->
+<!-- @author hex1r0 -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="PlaceLimitTypeName">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FlowerPot_owner"/>
+      <xs:enumeration value="FlowerPot_visitor"/>
+      <xs:enumeration value="Storage"/>
+      <xs:enumeration value="FlowerPot"/>
+      <xs:enumeration value="cookingTable"/>
+      <xs:enumeration value="WallDeco_picture"/>
+      <xs:enumeration value="Juke_box"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PlaceArea">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="interior"/>
+      <xs:enumeration value="exterior"/>
+      <xs:enumeration value="all"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PlaceLocation">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Wall"/>
+      <xs:enumeration value="Floor"/>
+      <xs:enumeration value="stack"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Category">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Carpet"/>
+      <xs:enumeration value="Curtain"/>
+      <xs:enumeration value="Chair"/>
+      <xs:enumeration value="Bed"/>
+      <xs:enumeration value="Table"/>
+      <xs:enumeration value="Decoration"/>
+      <xs:enumeration value="Book"/>
+      <xs:enumeration value="npc"/>
+      <xs:enumeration value="Light"/>
+      <xs:enumeration value="OutLight"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="TooltipType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="flowerpot"/>
+      <xs:enumeration value="dish"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RequestCategory">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="flowerpot"/>
+      <xs:enumeration value="dish"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Quality">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="common"/>
+      <xs:enumeration value="legend"/>
+      <xs:enumeration value="rare"/>
+      <xs:enumeration value="unique"/>
+      <xs:enumeration value="epic"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="HousingObjFunction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Chair"/>
+      <xs:enumeration value="storage"/>
+      <xs:enumeration value="postbox"/>
+      <xs:enumeration value="npctype"/>
+      <xs:enumeration value="picture"/>
+      <xs:enumeration value="UseCount"/>
+      <xs:enumeration value="jukebox"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="OwnerUseCountPerDay">
+    <xs:restriction base="xs:byte">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PcUseFinalCondition">
+    <xs:restriction base="xs:byte">
+      <xs:enumeration value="0"/>
+      <xs:enumeration value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="InHouseWarehouseIdx">
+    <xs:restriction base="xs:byte">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="2"/>
+      <xs:enumeration value="3"/>
+      <xs:enumeration value="9"/>
+      <xs:enumeration value="10"/>
+      <xs:enumeration value="4"/>
+      <xs:enumeration value="11"/>
+      <xs:enumeration value="12"/>
+      <xs:enumeration value="5"/>
+      <xs:enumeration value="6"/>
+      <xs:enumeration value="7"/>
+      <xs:enumeration value="8"/>
+      <xs:enumeration value="14"/>
+      <xs:enumeration value="16"/>
+      <xs:enumeration value="18"/>
+      <xs:enumeration value="20"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PcUseType">
+    <xs:restriction base="xs:byte">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CheckType">
+    <xs:restriction base="xs:byte">
+      <xs:enumeration value="2"/>
+      <xs:enumeration value="0"/>
+      <xs:enumeration value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="EraseValue">
+    <xs:restriction base="xs:byte">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="0"/>
+      <xs:enumeration value="2"/>
+      <xs:enumeration value="3"/>
+      <xs:enumeration value="20"/>
+      <xs:enumeration value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

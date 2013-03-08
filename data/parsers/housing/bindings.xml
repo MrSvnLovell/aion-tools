@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ This program is free software: you can redistribute it and/or modify it under
+ the terms of the GNU General Public License as published by the Free Software
+ Foundation, either version 3 of the License, or (at your option) any later
+ version.
+
+ This program is distributed in the hope that it will be useful, but WITHOUT
+ ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+ details.
+
+ You should have received a copy of the GNU General Public License along with
+ this program. If not, see <http://www.gnu.org/licenses/>.
+-->
+<!-- @author hex1r0 -->
+<jaxb:bindings
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+    xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+    jaxb:extensionBindingPrefixes="xjc"
+    version="2.1">
+  <jaxb:globalBindings generateIsSetMethod="true" fixedAttributeAsConstantProperty="true">
+    <xjc:serializable/>
+  </jaxb:globalBindings>
+  <jaxb:bindings schemaLocation="client_housing_common.xsd">
+    <jaxb:bindings node="//xs:simpleType[@name='OwnerUseCountPerDay']">
+      <jaxb:typesafeEnumClass name="OwnerUseCountPerDay"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='OwnerUseCountPerDay']/xs:restriction/xs:enumeration[@value='0']">
+      <jaxb:typesafeEnumMember name="UNLIMITED"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='OwnerUseCountPerDay']/xs:restriction/xs:enumeration[@value='1']">
+      <jaxb:typesafeEnumMember name="ONCE"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='PcUseFinalCondition']">
+      <jaxb:typesafeEnumClass name="PcUseFinalCondition"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='PcUseFinalCondition']/xs:restriction/xs:enumeration[@value='0']">
+      <jaxb:typesafeEnumMember name="TRUE"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='PcUseFinalCondition']/xs:restriction/xs:enumeration[@value='1']">
+      <jaxb:typesafeEnumMember name="FALSE"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='PcUseType']">
+      <jaxb:typesafeEnumClass name="PcUseType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='PcUseType']/xs:restriction/xs:enumeration[@value='0']">
+      <jaxb:typesafeEnumMember name="FALSE"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='PcUseType']/xs:restriction/xs:enumeration[@value='1']">
+      <jaxb:typesafeEnumMember name="TRUE"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='InHouseWarehouseIdx']">
+      <jaxb:typesafeEnumClass name="InHouseWarehouseIdx"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='InHouseWarehouseIdx']/xs:restriction/xs:enumeration[@value='1']">
+      <jaxb:typesafeEnumMember name="HOUSE_STORAGE_01"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='InHouseWarehouseIdx']/xs:restriction/xs:enumeration[@value='2']">
+      <jaxb:typesafeEnumMember name="HOUSE_STORAGE_02"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='InHouseWarehouseIdx']/xs:restriction/xs:enumeration[@value='3']">
+      <jaxb:typesafeEnumMember name="HOUSE_STORAGE_03"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='InHouseWarehouseIdx']/xs:restriction/xs:enumeration[@value='4']">
+      <jaxb:typesafeEnumMember name="HOUSE_STORAGE_04"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='InHouseWarehouseIdx']/xs:restriction/xs:enumeration[@value='5']">
+      <jaxb:typesafeEnumMember name="HOUSE_STORAGE_05"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='InHouseWarehouseIdx']/xs:restriction/xs:enumeration[@value='6']">
+      <jaxb:typesafeEnumMember name="HOUSE_STORAGE_06"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='InHouseWarehouseIdx']/xs:restriction/xs:enumeration[@value='7']">
+      <jaxb:typesafeEnumMember name="HOUSE_STORAGE_07"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='InHouseWarehouseIdx']/xs:restriction/xs:enumeration[@value='8']">
+      <jaxb:typesafeEnumMember name="HOUSE_STORAGE_08"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='InHouseWarehouseIdx']/xs:restriction/xs:enumeration[@value='9']">
+      <jaxb:typesafeEnumMember name="HOUSE_STORAGE_09"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='InHouseWarehouseIdx']/xs:restriction/xs:enumeration[@value='10']">
+      <jaxb:typesafeEnumMember name="HOUSE_STORAGE_10"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='InHouseWarehouseIdx']/xs:restriction/xs:enumeration[@value='11']">
+      <jaxb:typesafeEnumMember name="HOUSE_STORAGE_11"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='InHouseWarehouseIdx']/xs:restriction/xs:enumeration[@value='12']">
+      <jaxb:typesafeEnumMember name="HOUSE_STORAGE_12"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='InHouseWarehouseIdx']/xs:restriction/xs:enumeration[@value='14']">
+      <jaxb:typesafeEnumMember name="HOUSE_STORAGE_14"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='InHouseWarehouseIdx']/xs:restriction/xs:enumeration[@value='16']">
+      <jaxb:typesafeEnumMember name="HOUSE_STORAGE_16"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='InHouseWarehouseIdx']/xs:restriction/xs:enumeration[@value='18']">
+      <jaxb:typesafeEnumMember name="HOUSE_STORAGE_18"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='InHouseWarehouseIdx']/xs:restriction/xs:enumeration[@value='20']">
+      <jaxb:typesafeEnumMember name="HOUSE_STORAGE_20"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='CheckType']">
+      <jaxb:typesafeEnumClass name="CheckType"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='CheckType']/xs:restriction/xs:enumeration[@value='0']">
+      <jaxb:typesafeEnumMember name="ZERO"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='CheckType']/xs:restriction/xs:enumeration[@value='1']">
+      <jaxb:typesafeEnumMember name="ONE"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='CheckType']/xs:restriction/xs:enumeration[@value='2']">
+      <jaxb:typesafeEnumMember name="TWO"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='EraseValue']">
+      <jaxb:typesafeEnumClass name="EraseValue"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='EraseValue']/xs:restriction/xs:enumeration[@value='0']">
+      <jaxb:typesafeEnumMember name="ZERO"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='EraseValue']/xs:restriction/xs:enumeration[@value='1']">
+      <jaxb:typesafeEnumMember name="ONE"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='EraseValue']/xs:restriction/xs:enumeration[@value='2']">
+      <jaxb:typesafeEnumMember name="TWO"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='EraseValue']/xs:restriction/xs:enumeration[@value='3']">
+      <jaxb:typesafeEnumMember name="THREE"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='EraseValue']/xs:restriction/xs:enumeration[@value='10']">
+      <jaxb:typesafeEnumMember name="TEN"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="//xs:simpleType[@name='EraseValue']/xs:restriction/xs:enumeration[@value='20']">
+      <jaxb:typesafeEnumMember name="TWENTY"/>
+    </jaxb:bindings>
+  </jaxb:bindings>
+</jaxb:bindings>

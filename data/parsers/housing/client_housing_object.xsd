@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+details.
+
+You should have received a copy of the GNU General Public License along with
+this program. If not, see <http://www.gnu.org/licenses/>.
+-->
+<!-- @author hex1r0 -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="client_housing_common.xsd"/>
+  <xs:element name="client_housing_objects" type="client_housing_objectsType"/>
+  <xs:complexType name="client_housing_objectType">
+    <xs:sequence>
+      <xs:element type="xs:int" name="id"/>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="desc"/>
+      <xs:element type="xs:string" name="desc_long" minOccurs="0"/>
+      <xs:element type="Category" name="category"/>
+      <xs:element type="RequestCategory" name="tooltip_type" minOccurs="0"/>
+      <xs:element type="RequestCategory" name="request_category" minOccurs="0"/>
+      <xs:element type="Quality" name="quality"/>
+      <xs:element type="HousingObjFunction" name="housingobj_function" minOccurs="0"/>
+      <xs:element type="InHouseWarehouseIdx" name="in_house_warehouse_idx" minOccurs="0"/>
+      <xs:element type="PcUseType" name="pc_use_type" minOccurs="0"/>
+      <xs:element type="OwnerUseCountPerDay" name="owner_usecount_per_day" minOccurs="0"/>
+      <xs:element type="xs:short" name="pc_use_count_max" minOccurs="0"/>
+      <xs:element type="PcUseFinalCondition" name="pc_use_final_condition" minOccurs="0"/>
+      <xs:element type="xs:string" name="required_item" minOccurs="0"/>
+      <xs:element type="CheckType" name="check_type" minOccurs="0"/>
+      <xs:element type="EraseValue" name="erase_value" minOccurs="0"/>
+      <xs:element type="xs:string" name="reward_use" minOccurs="0"/>
+      <xs:element type="xs:string" name="reward_final" minOccurs="0"/>
+      <xs:element type="xs:short" name="use_delay" minOccurs="0"/>
+      <xs:element type="xs:int" name="use_cooltime" minOccurs="0"/>
+      <xs:element type="PlaceLimitTypeName" name="place_limit_tag" minOccurs="0"/>
+      <xs:element type="xs:string" name="npcname" minOccurs="0"/>
+      <xs:element type="xs:string" name="type"/>
+      <xs:element type="PlaceArea" name="place_area"/>
+      <xs:element type="PlaceLocation" name="place_location"/>
+      <xs:element type="xs:float" name="talking_distance"/>
+      <xs:element type="xs:short" name="housingobj_max_use_days" minOccurs="0"/>
+      <xs:element type="xs:byte" name="housingobj_max_use" minOccurs="0"/>
+      <xs:element type="xs:string" name="dir"/>
+      <xs:element type="xs:string" name="mesh"/>
+      <xs:element type="xs:string" name="default_color" minOccurs="0"/>
+      <xs:element type="xs:string" name="fx_name" minOccurs="0"/>
+      <xs:element type="xs:string" name="fx_bone_name" minOccurs="0"/>
+      <xs:element type="xs:string" name="icon_name"/>
+      <xs:element type="xs:string" name="cursor_type"/>
+      <xs:element type="xs:string" name="user_animation" minOccurs="0"/>
+      <xs:element type="xs:string" name="ui_sound_type"/>
+      <xs:element type="xs:byte" name="housing_script_setpos" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="client_housing_objectsType">
+    <xs:sequence>
+      <xs:element type="client_housing_objectType" name="client_housing_object" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="generated_time"/>
+  </xs:complexType>
+</xs:schema>
